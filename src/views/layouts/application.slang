@@ -8,7 +8,9 @@ html
     link rel="stylesheet" href="/dist/main.bundle.css"
 
   body
+    == render(partial: "shared/_header.slang")
     == render(partial: "shared/_nav.slang")
+    
     div
       == content
 
