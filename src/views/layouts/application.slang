@@ -8,6 +8,7 @@ html
     link rel="stylesheet" href="/dist/main.bundle.css"
 
   body
-    == content
+    div
+      == content
 
     script src="/dist/main.bundle.js"
