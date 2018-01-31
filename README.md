@@ -1,6 +1,8 @@
-# today-we-learned
+# TODAY WE LEARNED
 
-today-we-learned is a new project using [Amber Framework](https://amberframework.org/)
+![TWL](https://i.imgur.com/aG4uynd.png)
+
+TODAY WE LEARNED is a new project using [Amber Framework](https://amberframework.org/)
 
 ## Installation
 
@@ -69,7 +71,7 @@ docker-compose logs -f
 
 ## Contributing
 
-1. Fork it ( https://github.com/your-github-user/today-we-learned/fork )
+1. Fork it ( https://github.com/changjoo-park/today-we-learned/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
@@ -77,4 +79,4 @@ docker-compose logs -f
 
 ## Contributors
 
-- [your-github-user](https://github.com/your-github-user) ChangJoo Park - creator, maintainer
+- [changjoo-park](https://github.com/changjoo-park) ChangJoo Park - creator, maintainer
