@@ -90,10 +90,15 @@ main {
 
 .post-content {
   overflow: auto;
-  padding: 4vw; }
+  padding: 4vw;
+  margin-bottom: 10px; }
 
-.post-content.copy h1 {
+.post-content.copy .post-content-title {
   font-size: 1.6em; }
+
+.post-content.copy pre {
+  background-color: black;
+  color: white; }
 
 .copy h1,
 .copy h2,
@@ -102,5 +107,10 @@ main {
 .copy p,
 .copy ul {
   margin: 0 0 1.2em; }
+
+.post-content footer {
+  font-size: 1em;
+  font-style: italic;
+  text-align: right; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLmJ1bmRsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/

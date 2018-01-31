@@ -114,11 +114,17 @@ main {
 .post-content {
   overflow: auto;
   padding: 4vw;
+  margin-bottom: 10px;
 }
 
 .post-content.copy {
-  h1 {
+  .post-content-title {
     font-size: 1.6em;
+  }  
+
+  pre {
+    background-color: black;
+    color: white;
   }
 }
 
@@ -129,4 +135,10 @@ main {
 .copy p,
 .copy ul {
   margin: 0 0 1.2em;
+}
+
+.post-content footer {
+  font-size: 1em;
+  font-style: italic;
+  text-align: right;
 }
