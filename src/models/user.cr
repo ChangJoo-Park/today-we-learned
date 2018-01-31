@@ -5,9 +5,14 @@ class User < Granite::ORM::Base
   include Crypto
   adapter pg
   primary id : Int64
+  field username : String
   field email : String
   field hashed_password : String
   timestamps
+
+  validate :username, "is required", -> (user : User) do
+    (username = user.username) ? !username.empty? : false
+  end
 
   validate :email, "is required", -> (user : User) do
     (email = user.email) ? !email.empty? : false
