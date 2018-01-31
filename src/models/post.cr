@@ -1,4 +1,6 @@
 require "granite_orm/adapter/pg"
+require "markdown"
+require "autolink"
 
 class Post < Granite::ORM::Base
   adapter pg
@@ -11,4 +13,8 @@ class Post < Granite::ORM::Base
   field body : String
   field slug : String
   timestamps
+
+  def markdown_content
+    Autolink.auto_link(Markdown.to_html(body.not_nil!))
+  end
 end
