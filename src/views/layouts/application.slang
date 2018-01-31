@@ -10,8 +10,8 @@ html
   body
     == render(partial: "shared/_header.slang")
     == render(partial: "shared/_nav.slang")
-    
-    div
+
+    main
       == content
 
     script src="/dist/main.bundle.js"

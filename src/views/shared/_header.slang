@@ -1,2 +1,3 @@
-header.header
-  h1 Today We Learned
+header.site-header
+  h1 
+    a href="/" Today We Learned
