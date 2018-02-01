@@ -7,7 +7,7 @@ section
         div == post.markdown_content
         footer
           div = post.user.username
-          div = post.created_at
+          div = time_to_string(post.created_at.not_nil!)
       aside
         == link_to("##{post.tag.name}", "/#{post.tag.name}")
         == link_to("read", "/posts/#{post.id}", class: "btn btn-success btn-xs")
