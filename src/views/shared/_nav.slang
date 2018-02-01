@@ -1,9 +1,16 @@
 ul.site-nav
   li
-    a href="/posts/new" Add
-  li Search
+    a href="/posts/new"
+      i.icono-plusCircle
   li
-    a href="/statistics" Stats
-  li About
+    a href="#"
+      i.icono-search
   li
-    a href="/random" Random
+    a href="/statistics"
+      i.icono-barChart
+  li
+    a href="#"
+      i.icono-comment
+  li
+    a href="/random"
+      i.icono-infinity

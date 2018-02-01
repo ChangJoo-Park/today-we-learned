@@ -6,6 +6,7 @@ html
     meta http-equiv="X-UA-Compatible" content="IE=edge"
     meta name="viewport" content="width=device-width, initial-scale=1"
     link rel="stylesheet" href="//cdn.jsdelivr.net/editor/0.1.0/editor.css"
+    link rel="stylesheet" href="http://icono-49d6.kxcdn.com/icono.min.css"
     link rel="stylesheet" href="/dist/main.bundle.css"
 
   body
