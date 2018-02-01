@@ -142,3 +142,29 @@ main {
   font-style: italic;
   text-align: right;
 }
+
+/**
+ *  Form, New and Edit
+ */
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  width: 100%;
+  font-size: 1.2em;
+  padding: 5px;
+}
+
+/** 
+ * Buttons
+ */
+.btn {
+  background-color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+  border: 1px solid #333;
+  padding: 0.5em;
+  cursor: pointer;
+  color: #333;
+}
