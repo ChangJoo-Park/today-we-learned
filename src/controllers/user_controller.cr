@@ -4,7 +4,11 @@ class UserController < ApplicationController
   end
 
   def show
-    render("show.slang") if (user = current_user)
+    if (user = User.find params[:id])
+      render("show.slang")
+    else
+      redirect_to "/"
+    end
   end
 
   def edit
