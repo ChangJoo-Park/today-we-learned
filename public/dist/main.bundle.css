@@ -56,7 +56,17 @@ h6,
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 100; }
+  z-index: 100;
+  list-style: none;
+  padding: 0;
+  padding-left: 10px;
+  margin: 0; }
+  .site-nav li {
+    padding: 5px; }
+  .site-nav a i {
+    color: #333; }
+  .site-nav a:hover i {
+    color: #082736; }
 
 /**
  * Site Main
