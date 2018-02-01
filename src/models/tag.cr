@@ -6,7 +6,8 @@ class Tag < Granite::ORM::Base
 
   # id : Int64 primary key is created for you
   field name : String
+  field slug : String
   timestamps
-  
+
   has_many :posts
 end

@@ -5,7 +5,7 @@ class TagController < ApplicationController
   end
 
   def show
-    if tag = Tag.find params["id"]
+    if tag = Tag.find_by :slug, params["id"]
       render("show.slang")
     else
       flash["warning"] = "Tag with ID #{params["id"]} Not Found"
@@ -67,6 +67,7 @@ class TagController < ApplicationController
   def tag_params
     params.validation do
       required(:name) { |f| !f.nil? }
+      required(:slug) { |f| !f.nil? }
     end
   end
 end
