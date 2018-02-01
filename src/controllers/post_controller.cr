@@ -35,7 +35,7 @@ class PostController < ApplicationController
   end
 
   def edit
-    if post = Post.find_by :slug, params["id"]
+    if post = Post.find params["id"]
       render("edit.slang")
     else
       flash["warning"] = "Post with ID #{params["id"]} Not Found"
@@ -44,7 +44,7 @@ class PostController < ApplicationController
   end
 
   def update
-    if post = Post.find_by :slug, params["id"]
+    if post = Post.find params["id"]
       post.set_attributes(post_params.validate!)
       if post.valid? && post.save
         flash["success"] = "Updated Post successfully."

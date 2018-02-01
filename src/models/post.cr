@@ -27,9 +27,9 @@ class Post < Granite::ORM::Base
     (post.slug != nil && post.slug != "")
   })
 
-  validate(:slug, "duplicated", ->(post : self) {
-    (exists = Post.find_by :slug, post.slug) ? false : true
-  })
+  # validate(:slug, "duplicated", ->(post : self) {
+  #   (exists = Post.find_by :slug, post.slug) ? false : true
+  # })
 
   def markdown_content
     Autolink.auto_link(Markdown.to_html(body.not_nil!))
