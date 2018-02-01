@@ -27,6 +27,7 @@ Amber::Server.configure do |app|
   end
 
   routes :web do
+    get "/statistics", StatisticsController, :index
     resources "/posts", PostController
     resources "/tags", TagController
     get "/random", PostController, :random
