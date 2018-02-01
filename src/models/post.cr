@@ -7,7 +7,8 @@ class Post < Granite::ORM::Base
   table_name posts
 
   belongs_to :user
-
+  belongs_to :tag
+  
   # id : Int64 primary key is created for you
   field title : String
   field body : String

@@ -95,6 +95,11 @@ main {
 
 .post-content.copy .post-content-title {
   font-size: 1.6em; }
+  .post-content.copy .post-content-title a {
+    color: #333;
+    text-decoration: none; }
+    .post-content.copy .post-content-title a:hover {
+      text-decoration: underline; }
 
 .post-content.copy pre {
   background-color: black;
@@ -124,7 +129,7 @@ main {
   font-size: 1.2em;
   padding: 5px; }
 
-/** 
+/**
  * Buttons
  */
 .btn {

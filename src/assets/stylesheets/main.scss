@@ -58,7 +58,7 @@ h6,
 .site-header a {
   display: block;
   text-transform: uppercase;
-  text-decoration: none;  
+  text-decoration: none;
   color: #082736;
   letter-spacing: .1em;
   font-weight: 900;
@@ -68,7 +68,7 @@ h6,
 
 /**
  * Site Nav
- */ 
+ */
 .site-nav {
   position: fixed;
   bottom: 0;
@@ -120,7 +120,15 @@ main {
 .post-content.copy {
   .post-content-title {
     font-size: 1.6em;
-  }  
+
+    a {
+      color: #333;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 
   pre {
     background-color: black;
@@ -156,7 +164,7 @@ main {
   padding: 5px;
 }
 
-/** 
+/**
  * Buttons
  */
 .btn {

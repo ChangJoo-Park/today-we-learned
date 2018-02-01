@@ -73,6 +73,7 @@ class PostController < ApplicationController
       required(:title) { |f| !f.nil? }
       required(:body) { |f| !f.nil? }
       required(:slug) { |f| !f.nil? }
+      required(:tag_id) { |f| !f.nil? }
     end
   end
 end
