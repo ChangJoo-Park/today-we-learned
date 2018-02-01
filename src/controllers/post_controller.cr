@@ -20,6 +20,10 @@ class PostController < ApplicationController
 
   def create
     post = Post.new(post_params.validate!)
+    
+    if (current_user = context.current_user)
+      post.user_id = current_user.id
+    end
 
     if post.valid? && post.save
       flash["success"] = "Created Post successfully."
@@ -69,7 +73,6 @@ class PostController < ApplicationController
       required(:title) { |f| !f.nil? }
       required(:body) { |f| !f.nil? }
       required(:slug) { |f| !f.nil? }
-      required(:user_id) { |f| !f.nil? }
     end
   end
 end
