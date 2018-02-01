@@ -1,6 +1,6 @@
 # TODAY WE LEARNED
 
-![TWL](https://i.imgur.com/aG4uynd.png)
+![TWL](https://i.imgur.com/HH2jtlV.png)
 
 TODAY WE LEARNED is a new project using [Amber Framework](https://amberframework.org/)
 
@@ -39,7 +39,7 @@ export AMBER_ENV=production
 ```
 
 To build a production release:
-  
+
 ```
 shards build --production --release today-we-learned
 ```
