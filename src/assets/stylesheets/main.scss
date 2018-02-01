@@ -164,6 +164,10 @@ main {
   padding: 5px;
 }
 
+.CodeMirror {
+  height: 250px !important;
+}
+
 /**
  * Buttons
  */
@@ -186,7 +190,6 @@ main {
 
 .errors {
   padding: 10px;
-  background-color: tomato;
-  color: white;
+  color: #333;
   text-decoration: underline;
 }

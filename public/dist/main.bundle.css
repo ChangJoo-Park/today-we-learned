@@ -129,6 +129,9 @@ main {
   font-size: 1.2em;
   padding: 5px; }
 
+.CodeMirror {
+  height: 250px !important; }
+
 /**
  * Buttons
  */
@@ -149,8 +152,7 @@ main {
 
 .errors {
   padding: 10px;
-  background-color: tomato;
-  color: white;
+  color: #333;
   text-decoration: underline; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLmJ1bmRsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
