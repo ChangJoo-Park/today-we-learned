@@ -113,4 +113,27 @@ main {
   font-style: italic;
   text-align: right; }
 
+/**
+ *  Form, New and Edit
+ */
+.form-group {
+  margin-bottom: 10px; }
+
+.form-control {
+  width: 100%;
+  font-size: 1.2em;
+  padding: 5px; }
+
+/** 
+ * Buttons
+ */
+.btn {
+  background-color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+  border: 1px solid #333;
+  padding: 0.5em;
+  cursor: pointer;
+  color: #333; }
+
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLmJ1bmRsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
