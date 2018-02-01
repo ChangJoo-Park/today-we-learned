@@ -29,6 +29,7 @@ Amber::Server.configure do |app|
   routes :web do
     resources "/posts", PostController
     resources "/tags", TagController
+    get "/random", PostController, :random
     get "/profile", UserController, :show
     get "/profile/edit", UserController, :edit
     patch "/profile", UserController, :update

@@ -1,6 +1,6 @@
 class PostController < ApplicationController
   def index
-    posts = Post.all
+    posts = Post.all("ORDER BY created_at DESC")
     render("index.slang")
   end
 
@@ -9,7 +9,7 @@ class PostController < ApplicationController
       render("show.slang")
     else
       flash["warning"] = "Post with ID #{params["id"]} Not Found"
-      redirect_to "/posts"
+      redirect_to "/"
     end
   end
 
@@ -20,14 +20,14 @@ class PostController < ApplicationController
 
   def create
     post = Post.new(post_params.validate!)
-    
+
     if (current_user = context.current_user)
       post.user_id = current_user.id
     end
 
     if post.valid? && post.save
       flash["success"] = "Created Post successfully."
-      redirect_to "/posts"
+      redirect_to "/"
     else
       flash["danger"] = "Could not create Post!"
       render("new.slang")
@@ -39,7 +39,7 @@ class PostController < ApplicationController
       render("edit.slang")
     else
       flash["warning"] = "Post with ID #{params["id"]} Not Found"
-      redirect_to "/posts"
+      redirect_to "/"
     end
   end
 
@@ -48,14 +48,14 @@ class PostController < ApplicationController
       post.set_attributes(post_params.validate!)
       if post.valid? && post.save
         flash["success"] = "Updated Post successfully."
-        redirect_to "/posts"
+        redirect_to "/"
       else
         flash["danger"] = "Could not update Post!"
         render("edit.slang")
       end
     else
       flash["warning"] = "Post with ID #{params["id"]} Not Found"
-      redirect_to "/posts"
+      redirect_to "/"
     end
   end
 
@@ -65,7 +65,15 @@ class PostController < ApplicationController
     else
       flash["warning"] = "Post with ID #{params["id"]} Not Found"
     end
-    redirect_to "/posts"
+    redirect_to "/"
+  end
+
+  def random
+    if post = Post.first("ORDER BY random()")
+      render("random.slang")
+    else
+      redirect_to "/"
+    end
   end
 
   def post_params

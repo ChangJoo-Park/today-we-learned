@@ -4,7 +4,7 @@
       section
         div.post-content.copy
           h1.post-content-title
-            == link_to("#{post.title}", "/posts/#{post.slug}")
+            == link_to("#{post.title}", "/posts/#{post.id}")
           div == post.markdown_content
           footer
             div = post.user.username
