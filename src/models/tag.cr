@@ -10,4 +10,13 @@ class Tag < Granite::ORM::Base
   timestamps
 
   has_many :posts
+
+  validate(:slug, "required.", ->(tag : self) {
+    (tag.slug != nil && tag.slug != "")
+  })
+
+  validate(:slug, "duplicated", ->(tag : self) {
+    (exists = Tag.find_by :slug, tag.slug) ? false : true
+  })
+
 end
