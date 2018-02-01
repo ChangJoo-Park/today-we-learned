@@ -141,4 +141,16 @@ main {
   cursor: pointer;
   color: #333; }
 
+/**
+ *  Errors
+ */
+.errors-wrapper {
+  margin-bottom: 10px; }
+
+.errors {
+  padding: 10px;
+  background-color: tomato;
+  color: white;
+  text-decoration: underline; }
+
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLmJ1bmRsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/

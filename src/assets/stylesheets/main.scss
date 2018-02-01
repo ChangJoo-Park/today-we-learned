@@ -176,3 +176,17 @@ main {
   cursor: pointer;
   color: #333;
 }
+
+/**
+ *  Errors
+ */
+.errors-wrapper {
+  margin-bottom: 10px;
+}
+
+.errors {
+  padding: 10px;
+  background-color: tomato;
+  color: white;
+  text-decoration: underline;
+}
