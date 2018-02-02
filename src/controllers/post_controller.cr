@@ -6,7 +6,11 @@ class PostController < ApplicationController
 
   def show
     if post = Post.find_by :slug, params["id"]
-      render("show.slang")
+      respond_with do
+        html render("show.slang")
+        json post.to_json
+        text post.to_text
+      end
     else
       flash["warning"] = "Post with ID #{params["id"]} Not Found"
       redirect_to "/"
