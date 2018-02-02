@@ -9,6 +9,9 @@ ul.site-nav
     a href="/statistics"
       i.icono-barChart
   li
+    a href="/profile/1"
+      i.icono-user
+  li
     a href="#"
       i.icono-comment
   li
