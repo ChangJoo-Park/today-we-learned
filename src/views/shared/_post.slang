@@ -4,7 +4,7 @@ section
       div.post-content.copy
         h1.post-content-title
           == link_to("#{post.title}", "/posts/#{post.slug}")
-        div == post.markdown_content
+        div.post-content-body == post.to_markdown
         footer
           div = post.user.username
           div = time_to_string(post.created_at.not_nil!)
