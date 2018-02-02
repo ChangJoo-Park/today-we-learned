@@ -20,6 +20,7 @@ class RegistrationController < ApplicationController
 
   private def registration_params
     params.validation do
+      required(:username) {|f| !f.nil? && !f.empty? }
       required(:email) { |f| !f.nil? }
       required(:password) { |f| !f.nil? }
     end
