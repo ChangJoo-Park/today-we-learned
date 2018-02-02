@@ -6,7 +6,8 @@ section
           == link_to("#{post.title}", "/posts/#{post.slug}")
         div.post-content-body == post.to_markdown
         footer
-          div = post.user.username
+          div
+            == link_to("#{post.user.username}", "/profile/#{post.user.id}")
           div = time_to_string(post.created_at.not_nil!)
       aside
           == link_to("##{post.tag.name}", "/tags/#{post.tag.slug}", class: "post-link, post-link-tag")
