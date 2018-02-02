@@ -97,9 +97,12 @@ main {
   min-width: 35rem;
   max-width: 60%;
   background: rgba(255, 255, 255, 0.9); }
+  .post section::after {
+    display: block; }
 
 .post-content {
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   padding: 4vw;
   margin-bottom: 10px; }
 
@@ -111,9 +114,20 @@ main {
     .post-content.copy .post-content-title a:hover {
       text-decoration: underline; }
 
-.post-content.copy pre {
-  background-color: black;
-  color: white; }
+.post aside {
+  height: 35px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around; }
+  .post aside a {
+    border-top: 2px solid #f4994b;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 5px;
+    flex: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333; }
 
 .copy h1,
 .copy h2,
@@ -138,12 +152,6 @@ main {
   width: 100%;
   font-size: 1.2em;
   padding: 5px; }
-
-.CodeMirror {
-  height: 250px !important; }
-
-.CodeMirror.cm-s-paper {
-  height: 100% !important; }
 
 /**
  * Buttons
