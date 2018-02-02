@@ -34,4 +34,15 @@ class Post < Granite::ORM::Base
   def markdown_content
     Autolink.auto_link(Markdown.to_html(body.not_nil!))
   end
+
+  def to_text
+"----------------------------------------
+title      : #{title}
+created_at : #{created_at}
+written_by : #{user.username}
+tag        : #{tag.name}
+----------------------------------------
+
+#{body}"
+  end
 end
