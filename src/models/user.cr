@@ -1,8 +1,11 @@
 require "granite_orm/adapter/pg"
 require "crypto/bcrypt/password"
+require "gravatarcr"
 
 class User < Granite::ORM::Base
   include Crypto
+  include Gravatarcr
+
   adapter pg
   primary id : Int64
   field username : String
@@ -41,6 +44,10 @@ class User < Granite::ORM::Base
 
   def authenticate(password : String)
     (bcrypt_pass = self.password) ? bcrypt_pass == password : false
+  end
+
+  def avatar
+    gravatar_url(self.email.to_s, 128)
   end
 
   private getter new_password : String?
