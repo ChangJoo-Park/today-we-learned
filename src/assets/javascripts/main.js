@@ -1,5 +1,4 @@
 import Amber from 'amber'
-import marked from 'marked'
 
 if (document.getElementsByTagName('textarea')) {
   try {
