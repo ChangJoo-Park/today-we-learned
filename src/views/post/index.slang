@@ -10,7 +10,6 @@
             div = post.user.username
             div = time_to_string(post.created_at.not_nil!)
         aside
-          == link_to("##{post.tag.name}", "/tags/#{post.tag.slug}")
-          == link_to("read", "/posts/#{post.slug}", class: "btn btn-success btn-xs")
-          == link_to("edit", "/posts/#{post.id}/edit", class: "btn btn-success btn-xs")
-          == link_to("delete", "/posts/#{ post.slug }?_method=delete&_csrf=#{csrf_token}", class: "btn btn-danger btn-xs", onclick: "return confirm('Are you sure?');")
+          == link_to("##{post.tag.name}", "/tags/#{post.tag.slug}", class: "post-link, post-link-tag")
+          == link_to("PERMALINK", "/posts/#{post.slug}", class: "post-link, post-link-permalink")
+          == link_to("MARKDOWN", "/posts/#{post.slug}.txt", class: "post-link, post-link-text")
