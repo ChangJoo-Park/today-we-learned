@@ -28,6 +28,10 @@ shards:
     github: amberframework/granite-orm
     version: 0.8.4
 
+  gravatarcr:
+    github: changjoo-park/gravatarcr
+    commit: 8dcf97c6256af1b4b4512c27a8401b850e9de766
+
   jasper_helpers:
     github: amberframework/jasper-helpers
     version: 0.1.8

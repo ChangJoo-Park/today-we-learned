@@ -36,6 +36,9 @@ dependencies:
   autolink:
     github: crystal-community/autolink.cr
 
+  gravatarcr:
+    github: changjoo-park/gravatarcr
+
 development_dependencies:
   garnet_spec:
     github: amberframework/garnet-spec
