@@ -177,4 +177,17 @@ main {
   color: #333;
   text-decoration: underline; }
 
+/**
+ *  Media Queries
+ */
+@media screen and (max-width: 800px) {
+  .site-nav {
+    display: flex;
+    background-color: #fff; }
+  .post section {
+    max-width: none;
+    min-width: 0; }
+    .post section .post-content.copy {
+      font-size: 0.8em; } }
+
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLmJ1bmRsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
